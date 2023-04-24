@@ -12,13 +12,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-" vim-plug plugins
-call plug#begin()
-Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'https://github.com/preservim/nerdtree' " NerdTree
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-call plug#end()
+" Plugin config
+try 
+  source ~/.config/nvim/plugins.vim
+catch
+  " No such file? No problem; just ignore it.
+endtry 
 
 " Key mappings
 "
