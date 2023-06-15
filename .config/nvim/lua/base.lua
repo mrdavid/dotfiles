@@ -25,7 +25,8 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.ai = true -- auto indent
 vim.opt.si = true -- smart indent
-vim.opt.wrap = false -- no wrap lines
+vim.opt.wrap = true -- wrap lines
+vim.opt.colorcolumn = '80' -- mark 80 char width
 vim.opt.backspace = 'start,eol,indent'
 vim.opt.path:append { '**' } -- finding files, search into subfolders
 vim.opt.wildignore:append { '*/nodes_modules/*' }
