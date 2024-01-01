@@ -1,0 +1,12 @@
+set imap_user = "dmr1@gmail.com"                       
+set imap_pass = "<PASSWORD>"                                    
+set smtp_url = "smtp://dmr1@smtp.gmail.com:587/"       
+set smtp_pass = "<PASSWORD>"                                    
+set from = "dmr1@gmail.com"                            
+set realname = "David M. Roehrscheid"                                  
+set folder = "imaps://imap.gmail.com:993"                     
+set spoolfile = "+INBOX"                                      
+set postponed = "+[Gmail]/Drafts"                             
+set header_cache = ~/.mutt/com.gmail.dmr1/cache/headers            
+set message_cachedir = ~/.mutt/com.gmail.dmr1/cache/bodies         
+set certificate_file = ~/.mutt/com.gmail.dmr1/certificates  
