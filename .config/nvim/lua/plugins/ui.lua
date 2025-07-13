@@ -2,18 +2,11 @@ return {
   {
     "nvimdev/dashboard-nvim",
     event = "VimEnter",
-    opts = function(_, opts)
-      local logo = [[
-███╗   ███╗██╗     ██╗     ██████╗ ███╗   ███╗
-████╗ ████║██║     ██║     ██╔══██╗████╗ ████║
-██╔████╔██║██║     ██║     ██████╔╝██╔████╔██║
-██║╚██╔╝██║██║     ██║     ██╔══██╗██║╚██╔╝██║
-██║ ╚═╝ ██║███████╗███████╗██║  ██║██║ ╚═╝ ██║
-╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
-                                              
-    ]]
-      logo = string.rep("\n", 8) .. logo .. "\n\n"
-      opts.config.header = vim.split(logo, "\n")
+    config = function()
+      require("dashboard").setup({
+        theme = "doom", -- config
+      })
     end,
+    dependencies = { { "nvim-tree/nvim-web-devicons" } },
   },
 }
